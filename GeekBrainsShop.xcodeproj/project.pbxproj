@@ -8,9 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		69023C002811C82300E2050C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69023BFF2811C82300E2050C /* AppDelegate.swift */; };
-		69023C022811C82300E2050C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69023C012811C82300E2050C /* SceneDelegate.swift */; };
-		69023C042811C82300E2050C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69023C032811C82300E2050C /* ViewController.swift */; };
-		69023C072811C82300E2050C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 69023C052811C82300E2050C /* Main.storyboard */; };
 		69023C092811C82500E2050C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 69023C082811C82500E2050C /* Assets.xcassets */; };
 		69023C0C2811C82500E2050C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 69023C0A2811C82500E2050C /* LaunchScreen.storyboard */; };
 		69023C172811C82500E2050C /* GeekBrainsShopTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69023C162811C82500E2050C /* GeekBrainsShopTests.swift */; };
@@ -38,9 +35,6 @@
 /* Begin PBXFileReference section */
 		69023BFC2811C82300E2050C /* GeekBrainsShop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GeekBrainsShop.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		69023BFF2811C82300E2050C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		69023C012811C82300E2050C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		69023C032811C82300E2050C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		69023C062811C82300E2050C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		69023C082811C82500E2050C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		69023C0B2811C82500E2050C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		69023C0D2811C82500E2050C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -99,13 +93,10 @@
 		69023BFE2811C82300E2050C /* GeekBrainsShop */ = {
 			isa = PBXGroup;
 			children = (
-				69023BFF2811C82300E2050C /* AppDelegate.swift */,
-				69023C012811C82300E2050C /* SceneDelegate.swift */,
-				69023C032811C82300E2050C /* ViewController.swift */,
-				69023C052811C82300E2050C /* Main.storyboard */,
-				69023C082811C82500E2050C /* Assets.xcassets */,
-				69023C0A2811C82500E2050C /* LaunchScreen.storyboard */,
-				69023C0D2811C82500E2050C /* Info.plist */,
+				69F5B5A12811D347009D9DAB /* App */,
+				69F5B5A62811D3BB009D9DAB /* Core */,
+				69F5B5A72811D3C3009D9DAB /* Resources */,
+				69F5B5A82811D3E1009D9DAB /* Environments */,
 			);
 			path = GeekBrainsShop;
 			sourceTree = "<group>";
@@ -125,6 +116,70 @@
 				69023C222811C82500E2050C /* GeekBrainsShopUITestsLaunchTests.swift */,
 			);
 			path = GeekBrainsShopUITests;
+			sourceTree = "<group>";
+		};
+		69F5B5A12811D347009D9DAB /* App */ = {
+			isa = PBXGroup;
+			children = (
+				69023BFF2811C82300E2050C /* AppDelegate.swift */,
+				69F5B5A22811D35A009D9DAB /* BusinessLogic */,
+				69F5B5A32811D367009D9DAB /* Entity */,
+				69F5B5A42811D37B009D9DAB /* Assembly */,
+				69F5B5A52811D386009D9DAB /* Flows */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		69F5B5A22811D35A009D9DAB /* BusinessLogic */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = BusinessLogic;
+			sourceTree = "<group>";
+		};
+		69F5B5A32811D367009D9DAB /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		69F5B5A42811D37B009D9DAB /* Assembly */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Assembly;
+			sourceTree = "<group>";
+		};
+		69F5B5A52811D386009D9DAB /* Flows */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Flows;
+			sourceTree = "<group>";
+		};
+		69F5B5A62811D3BB009D9DAB /* Core */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		69F5B5A72811D3C3009D9DAB /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				69023C0A2811C82500E2050C /* LaunchScreen.storyboard */,
+				69023C082811C82500E2050C /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		69F5B5A82811D3E1009D9DAB /* Environments */ = {
+			isa = PBXGroup;
+			children = (
+				69023C0D2811C82500E2050C /* Info.plist */,
+			);
+			path = Environments;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -233,7 +288,6 @@
 			files = (
 				69023C0C2811C82500E2050C /* LaunchScreen.storyboard in Resources */,
 				69023C092811C82500E2050C /* Assets.xcassets in Resources */,
-				69023C072811C82300E2050C /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,9 +312,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				69023C042811C82300E2050C /* ViewController.swift in Sources */,
 				69023C002811C82300E2050C /* AppDelegate.swift in Sources */,
-				69023C022811C82300E2050C /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -297,14 +349,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		69023C052811C82300E2050C /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				69023C062811C82300E2050C /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		69023C0A2811C82500E2050C /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
