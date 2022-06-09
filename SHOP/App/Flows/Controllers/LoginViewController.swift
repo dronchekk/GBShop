@@ -36,7 +36,7 @@ class LoginViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        title = "GeekBrainsShop"
+//        title = "GeekBrainsShop"
         navigationController?.navigationBar.prefersLargeTitles = true
 
         let hideKeyboardGesture = UITapGestureRecognizer(target: self, action: #selector(hideKeyboard))
