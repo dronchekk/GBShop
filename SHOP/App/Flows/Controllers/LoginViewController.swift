@@ -97,6 +97,8 @@ class LoginViewController: UIViewController {
 
     @objc
     private func tapBtnAuth(sender _: UIButton) {
+        Crashlytics.setLog(log: LogType.btnTapEnterApp)
+        
         loginFormView.btnProcess(show: true)
         presenter.viewDidTapAuthBtn(login: loginFormView.loginTextField.text, password: loginFormView.passwordTextField.text)
     }
