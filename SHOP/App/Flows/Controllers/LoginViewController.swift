@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Firebase
 
 protocol LoginViewInput {
     func showError()
@@ -41,7 +42,18 @@ class LoginViewController: UIViewController {
 
         let hideKeyboardGesture = UITapGestureRecognizer(target: self, action: #selector(hideKeyboard))
         loginFormView.scrollView.addGestureRecognizer(hideKeyboardGesture)
+
+//        let crashbutton = UIButton(type: .roundedRect)
+//        crashbutton.frame = CGRect(x: 100, y: 100, width: 100, height: 100)
+//        crashbutton.setTitle("Test Crash", for: [])
+//        crashbutton.addTarget(self, action: #selector(self.crashButtonTapped(_:)), for: .touchUpInside)
+//              view.addSubview(crashbutton)
     }
+    
+//    @IBAction func crashButtonTapped(_ sender: AnyObject) {
+//        let numbers = [0]
+//        let _ = numbers[1]
+//    }
 
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
@@ -91,12 +103,14 @@ class LoginViewController: UIViewController {
 
     @objc
     private func tapBtnRegister(sender _: UIButton) {
+        Crashlytics.setLog(log: LogType.tapRegister)
         presenter.viewDidTapRegistrationBtn()
     }
 }
 
 extension LoginViewController: LoginViewInput {
     func showError() {
+        Crashlytics.setLog(log: LogType.authError)
         loginFormView.showAuthError()
         loginFormView.btnProcess(show: false)
     }

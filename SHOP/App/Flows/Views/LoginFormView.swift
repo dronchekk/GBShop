@@ -9,6 +9,7 @@ import UIKit
 import SnapKit
 
 final class LoginFormView: UIView {
+    
     lazy var scrollView: UIScrollView = {
         let scrollView = UIScrollView()
         scrollView.alwaysBounceVertical = true
